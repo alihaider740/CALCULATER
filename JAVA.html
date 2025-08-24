@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    DOCUMENT
+  </head>
+  <body>
+    <form onsubmit="addNumber(); return false;">
+      <input type="number" name="num1" id="num1" placeholder="Enter num1" />
+      <input type="number" name="num2" id="num2" placeholder="Enter num2" />
+      <button type="submit">Add</button>
+    </form>
+    <form action="calculatePercentage(); return false;">
+      <input
+        type="number"
+        name="ObtMarks"
+        id="ObtMarks"
+        placeholder="Enter ObtMarks"
+      />
+      <input
+        type="number"
+        name="TotalMarks"
+        id="TotalMarks"
+        placeholder="Enter TotalMarks"
+      />
+      <button type="submit">CALCULATE</button>
+    </form>
+
+    <div id="result"></div>
+    <button id="submit">CALCULATE</button>
+    <div id="container">
+      <p>
+        klwowiwol isdhisdshisuhfkjs jhrsjhrfkjshrvk fsrhskhrsrh<br />
+        sfhskvrhkshfrksrhkfhkvhr <br />
+        ksldfjlsrjlsvsiksvlksfkv
+      </p>
+    </div>
+
+    <script>
+      function calculatePercentage() {
+        // Ref
+        const ObtMarksInputRef = document.getElementById("ObtMarks");
+        const TotalMarksInputRef = document.getElementById("TotalMarks");
+
+        const resultRef = document.querySelector("#result");
+
+        // Value
+
+        const ObtMarksValue = ObtMarksInputRef.value;
+        const TotalMarksValue = TotalMarksInputRef.value;
+        const percentage =
+          (Number(ObtMarksValue) / Number(TotalMarksValue)) * 100;
+        alert(ObtMarksVal);
+
+        resultRef.innerHTML = "Percentage: " + percentage + "%"; // Result 46
+      }
+
+      const containerRef = document.getElementById("container");
+
+      containerRef.addEventListener("mouseleave", () => {
+        alert("THE MOUSE HAS LEFT THE CONTAINER");
+      });
+      const helloBtn = document.getElementById("sayHello");
+      helloBtn.addEventListener("click", () => {
+        alert("Hello User");
+      });
+    </script>
+  </body>
+</html>
